@@ -1,2 +1,5 @@
 rootProject.name = 'Eureka-Zuul-Demo'
+include 'eureka-server'
+include 'zuul-proxy'
+include 'customer-service'
 
