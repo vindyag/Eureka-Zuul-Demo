@@ -18,8 +18,8 @@ public class GreetingController {
     @Value("${server.port}")
     private String portNumber;
 
-    //@Value("${spring.application.name}")
-   // private String appName;
+    @Value("${spring.application.name}")
+    private String appName;
 
     @RequestMapping("/greeting")
     String greeting(){
