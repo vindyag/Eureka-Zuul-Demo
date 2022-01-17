@@ -11,9 +11,11 @@ eureka:
       defaultZone: http://localhost:8761/eureka/
     healthcheck:
       enabled: true
-  instance: #added to remove warning
-    leaseRenewalIntervalInSeconds: 1
-    leaseExpirationDurationInSeconds: 2
+  #instance: #added to remove warning
+  #  lease:
+  #    duration: 10
+  #  leaseRenewalIntervalInSeconds: 5
+  #  leaseExpirationDurationInSeconds: 2
 
 logging:
   pattern:

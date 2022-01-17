@@ -11,11 +11,15 @@ eureka:
       defaultZone: http://localhost:8761/eureka/
 
 logging:
-  pattern: 
+  pattern:
     console: "%d{yyyy-MM-dd HH:mm:ss} ${LOG_LEVEL_PATTERN:-%5p} %m%n"
-              
+
 zuul:
   routes:
     customer:
       path: /customer/**
       serviceId: customer-service
+
+ribbon:
+  eureka:
+    enabled: true
