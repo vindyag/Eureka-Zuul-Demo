@@ -23,3 +23,4 @@ zuul:
 ribbon:
   eureka:
     enabled: true
+    # by default this is true. If false, cannot access customer-service via proxy-service
