@@ -19,6 +19,8 @@ zuul:
     customer:
       path: /customer/**
       serviceId: customer-service
+      #serviceId should correspond to application name of each micro service
+      #which is defined at specific application.properties file as “spring.application.name” property
 
 ribbon:
   eureka:

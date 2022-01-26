@@ -10,6 +10,7 @@ eureka:
     serviceUrl:
       defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
   server:
+    #renewalPercentThreshold: 0.49
     enableSelfPreservation: true
     # Defaults to true. With eureka.server.enableSelfPreservation: false console provide the error message
     # THE SELF PRESERVATION MODE IS TURNED OFF. THIS MAY NOT PROTECT INSTANCE EXPIRY IN CASE OF NETWORK/OTHER PROBLEMS.
